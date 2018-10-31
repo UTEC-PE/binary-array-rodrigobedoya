@@ -1,6 +1,9 @@
 #ifndef BOOLEAN_H
 #define BOOLEAN_H
 
+#include <iostream>
+using namespace std;
+
 class boolean {
     private:
         char* array;
@@ -8,7 +11,9 @@ class boolean {
     
     public:
         boolean(int size) {
-            // TODO
+            int chars = size/8+1;
+            array = char[chars];
+            cout << chars;
         }
         
         void bitOn(int position) {
